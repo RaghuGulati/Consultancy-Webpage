@@ -1,0 +1,109 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 1.4rem;
+         }
+
+        header {
+            background-color: #007bff;
+            background-color: rgba(228, 227, 246, 1.0);
+            background-color: rgba(120, 120, 187, 1.0);
+            background-color: rgba(120, 120, 157, 1.0);
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #about, #services, #experts, #contact{
+          margin-top: 55pt;
+          margin-bottom: 55pt;
+          /*border: 2pt solid black;*/
+          text-align: justify;
+        }
+
+        #about, #contact{
+          padding: 1.5rem;
+        }
+
+        #services, #experts{
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+
+        .service, .experts{
+          text-align: center;
+          margin-top: 15pt;
+          margin-bottom: 15pt;
+          /*border: 1pt solid black;*/
+          /*padding: 15pt;*/
+        }
+
+        .hero {
+            height: 35rem;
+            padding: 100px 20px;
+            text-align: center;
+            background-image: url("./clg.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            color: black;
+            /*border: 5px solid black;*/
+            align-content: center;
+
+        }
+
+        .card,{
+          padding: 2rem;
+        }
+
+        .section{
+          margin-top: 15pt;
+          margin-bottom: 15pt;
+        }
+
+        h5{
+          font-size: 1.6rem;
+          padding: 1rem;
+        }
+
+        .card-text{
+          font-size: 1.2rem;
+        }
+
+        #about{
+          background-color: rgba(228, 227, 246, 1.0);
+          /*background-color: rgba(120, 120, 157, 1.0);*/
+
+        }
+
+        #services{
+          background-color: rgba(238, 220, 238, 1.0);
+          background-color: rgba(228, 227, 246, 1.0);
+          /*background-color: rgba(120, 120, 157, 1.0);*/
+        }
+
+        #experts{
+          background-color: rgba(238, 220, 238, 1.0);
+          background-color: rgba(228, 227, 246, 1.0);
+          /*background-color: rgba(120, 120, 157, 1.0);*/
+        }
+
+        #contact{
+          background-color: rgba(238, 220, 238, 1.0);
+          background-color: rgba(228, 227, 246, 1.0);
+          /*background-color: rgba(120, 120, 157, 1.0);*/
+        }
+
+        .quote{
+          margin: auto;
+          width: 50%;
+          background-color: rgba(228, 227, 246, 0.75);
+        }
