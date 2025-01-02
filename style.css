@@ -1,3 +1,8 @@
+        html{
+          scroll-behavior: smooth;
+          scroll-padding-top: 100px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -106,4 +111,8 @@
           margin: auto;
           width: 50%;
           background-color: rgba(228, 227, 246, 0.75);
+        }
+
+        hr{
+          color: white;
         }

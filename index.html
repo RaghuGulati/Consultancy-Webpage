@@ -8,15 +8,15 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+
     <title>Consultancy Services</title>
   </head>
   <body>
 
-    <header>
-      <h1>Consultancy Services, GNDEC</h1>
-    </header>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!--
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +35,56 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
-          </li>        
+          </li> 
         </ul>
+
           
+        </div>
+      </div>
+    </nav>
+    -->
+
+    <nav class="navbar navbar-dark bg-primary sticky-top">
+      <div class="container-fluid row">
+        <div class="col-sm">
+          <h1 style="color: white; font-weight: bolder;">Consultancy Services, GNDEC</h1>  
+        </div>
+        <div class="col-sm d-flex justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <a class="navbar-brand">Menu</a>
+          <span class="navbar-toggler-icon"></span>
+        </button>  
+        </div>
+      </div>
+        
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+
+          <div class="offcanvas-body bg-dark">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-dismiss="offcanvas">Home</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about" data-bs-dismiss="offcanvas">
+                    About Us
+                </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services" data-bs-dismiss="offcanvas">Our Services</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#experts" data-bs-dismiss="offcanvas">Our Experts</a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact" data-bs-dismiss="offcanvas">Contact Us</a>
+              </li>
+              <hr>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -149,6 +196,16 @@
     <header>
       <h1>@ Copyright Reserved</h1>
     </header>
+
+    <script type="text/javascript">
+      $(document).on('click','.navbar-collapse.in',function(e) {
+          if( $(e.target).is('a') ) {
+              $(this).collapse('hide');
+          }
+      });
+    </script>
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
